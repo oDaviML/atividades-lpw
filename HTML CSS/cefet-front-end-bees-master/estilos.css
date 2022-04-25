@@ -1,0 +1,57 @@
+html, body {
+    min-height: 100%;
+}
+
+#logomarca{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body{
+    background-image: url(imgs/Fundo.jpg);
+    background-position: left bottom;
+    background-size: cover;
+    margin: 5% 14%;
+    font-size: 24px;
+    text-align: justify;
+}
+
+.curiosidade{
+    background-image: url(imgs/favo-de-mel.png);
+    border: 1px solid rgb(146, 124, 0);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.icone-curiosidade{
+    float: left;
+    margin-right: 20px;
+}
+
+.casta-de-abelha{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: gold;
+    border-bottom: 1px;
+    shape-outside: circle(50%);
+}
+
+#operaria{
+    float: left;
+    margin-right: 10px;
+} 
+
+#zangao{
+    float: right;
+    margin-left: 10px;
+}
+
+.par{
+    text-align: right;
+}
+
+#rainha{
+    float: left;
+    margin-right: 10px;
+}
