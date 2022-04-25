@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 5em;
+    }
+
+    button {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ilha do Mestre Kame</h1>
+  <p>VAmos calcular o poder de luta!!!</p>
+  <div>
+    <label>
+      Força:
+      <input type="number" value="1" id="input-forca">
+    </label>
+    <label>
+      Velocidade:
+      <input type="number" value="2" id="input-velocidade">
+    </label>
+    <button id="calcula">Poder de luta</button>
+  </div>
+  <p>
+    O poder de luta é: <input type="number" disabled id="resultado-do-poder">
+  </p>
+
+  <p>Agora vamos falar sobre o cálculo do delta.</p>
+  <div>
+    <label>
+      Coeficiente a:
+      <input type="number" id="a">
+    </label>
+    <label>
+      Coeficiente b:
+      <input type="number" id="b">
+    </label>
+    <label>
+      Coeficiente c:
+      <input type="number" id="c">
+    </label>
+    <button id="calcula-delta">Calcular Delta</button>
+    <p>O delta vale: <span id="resultado-delta">?</span></p>
+  </div>
+
+  <script src="poder-de-luta.js"></script>
+  <script src="calcula-delta.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja</title>
+  <style>
+    .produto {
+      width: 200px;
+      height: 200px;
+      border: 1px dashed goldenrod;
+      transition: all 200ms ease-out;
+    }
+    body {
+      display: flex;
+    }
+
+    img {
+      width: 200px;
+      height: 160px;
+      background-color: silver;
+    }
+
+    .selecionado {
+      transform: scale(1.1);
+      border-color: red;
+      border-style: solid;
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <article class="produto">
+    <img src="" alt="" class="foto">
+    <span class="nome">Cápsula 1</span>
+  </article>
+  <article class="produto">
+    <img src="" alt="" class="foto">
+    <span class="nome">Semente dos Deuses</span>
+  </article>
+  <article class="produto">
+    <img src="" alt="" class="foto">
+    <span class="nome">Medidor do poder</span>
+  </article>
+
+  <script>
+    // 1. pegar todos os nomes dos produtos
+    // 2. percorrer esses nomes,
+    // 2.1 ...imprimindo cada um no "console.log"
+    let nomesDosProdutos = document.querySelectorAll('.nome');
+    for (let i = 0; i < nomesDosProdutos.length; i++) {
+      let nomeAtual = nomesDosProdutos[i];
+      console.log(nomeAtual.innerHTML);
+    }
+
+    // GERAL: no click do nome de um produto, tornńa-lo selecionado
+    // 1. pegar ref de todos os produtos
+    // 2. colocar um evento de click em cada um
+    // 3. na função registrada para o click, 
+    // 3.1. descobrir qual dos nomes foi clicado
+    // 3.2. a partir do nome, pegar o elem. que é o pai dele (.produto)
+    // 3.3. colocar a classe "selecionado" no pai do .nome
+
+    let todosOsNomes = document.querySelectorAll('.nome');
+    for (let i = 0; i < todosOsNomes.length; i++) {
+      let nomeEl = todosOsNomes[i];
+      nomeEl.addEventListener('click', selecionarProduto);
+    }
+
+    function selecionarProduto(evento) {
+      // 3.1
+      let nomeEl = evento.currentTarget;
+      
+      // 3.2
+      let produtoEl = nomeEl.parentElement;
+      
+      // 3.3
+      produtoEl.classList.toggle('selecionado');
+    }
+
+
+  </script>
+</body>
+</html>
