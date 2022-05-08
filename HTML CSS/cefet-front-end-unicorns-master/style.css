@@ -1,0 +1,92 @@
+html, body {
+    min-height: 100%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#cabecalho {
+    padding-left: 34px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    color: white;
+    background-color: #6175f0;
+}
+
+div#cabecalho h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+div#cabecalho h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+}
+
+#imagem-principal {
+    float: left;
+    width: 310px;
+    margin-right: 13px;
+}
+
+#verdade {
+    float: right;
+}
+
+div#verdade h1 {
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+}
+
+div#verdade p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#hoje {
+    float: right;
+    width: 405px;
+    background-color: #f8cef7;
+    border: 1px solid #ff56fb;
+    padding-top: 20px;
+    padding: 35px;
+    padding-bottom: 30px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+div#hoje h2 {
+    font-size: 24px;
+    font-family: 'Times New Roman', serif;
+}
+
+div#hoje h3 {
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+}
+
+div#hoje img {
+    width: 122px;
+}
+
+#musica {
+    float: left;
+    margin-left: 12px;
+}
+
+div#musica h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+div#musica p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#musica p:nth-child(2n) { 
+    clear: right;
+    margin-left: 34px;
+}

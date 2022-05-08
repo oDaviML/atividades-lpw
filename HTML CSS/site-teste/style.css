@@ -1,0 +1,65 @@
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu ul li{
+	background-color: #6da3f9;
+	float: left;
+	width: 200px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+	position: relative;
+}
+
+.menu ul li:hover{
+	background-color: #2c69cc;
+}
+
+.menu ul{
+	padding: 0px;
+}
+
+.menu ul ul{
+	display: none;
+}
+
+.menu ul li:hover > ul{
+	display:block;
+}
+
+.menu ul ul ul{
+	margin-left: 201px;
+	top: 0px;
+	position: absolute;
+}
+
+.menu ul ul li:hover{
+	background-color: #144aa0;
+}
+
+#jogo-velha {
+	display: block;
+	padding-top: 10%;
+	padding-left: 10%;
+}
+
+#jogo-velha button {
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+#jogo-velha input {
+	margin-top: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+#jogo-velha p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	margin-left: 10px;
+	font-size: 35px;
+}
